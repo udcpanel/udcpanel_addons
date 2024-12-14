@@ -1,0 +1,116 @@
+ {
+    "manifest_version": 2,
+    "name": "Udc_Panel_Addons",
+    "version": "1.0",
+    "description": "This extension was Development by Md. Ariful Islam to increase the production capacity at the Union Digital Center. Don't abuse it. Md. Ariful Islam or the creator of the extension will not be responsible in any way for its misuse.",
+    "icons": {
+        "16": "images/icon16.png",
+        "128": "images/icon128.png"
+      },
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_popup": "popup/popup.html"
+      },
+      "options_ui": {
+        "page": "options/options.html",
+        "open_in_tab": true
+      },
+      "content_scripts": [
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/*"],
+          "js": ["scripts/auto_issue.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/web/forms/attestation_other.php*"],
+          "js": ["scripts/attestation_other_note.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org//web/forms/attestation_other.php*"],
+          "js": ["scripts/attestation_other_note.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org//web/forms*"],
+          "js": ["scripts/all_address_fillup.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/web/forms*"],
+          "js": ["scripts/all_address_fillup.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/inheritance_certificate.php?application_id=*"],
+          "js": ["scripts/Warish_Investigators.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/web/forms/Inheritance_certififcate.php*"],
+          "js": ["scripts/DeathRegisterNoAdd.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org//web/forms/Inheritance_certififcate.php*"],
+          "js": ["scripts/DeathRegisterNoAdd.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/death_certificate.php?application_id=*"],
+          "js": ["scripts/Death_Witness.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/attestation_other.php?application_id=*"],
+          "js": ["scripts/prottoyon_verifier.js"],
+          "run_at": "document_end"
+        },
+
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/family_certififcate.php?application_id=*"],
+          "js": ["scripts/prottoyon_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/trade_certificate.php?application_id=*"],
+          "js": ["scripts/trade_certificate.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/web/forms/Inheritance_certififcate.php?*"],
+          "js": ["scripts/age_count.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org//web/forms/Inheritance_certififcate.php?*"],
+          "js": ["scripts/age_count.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/web/forms/tread_license.php*"],
+          "js": ["scripts/Trade_Licence_Fee_Counter.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org//web/forms/tread_license.php*"],
+          "js": ["scripts/Trade_Licence_Fee_Counter.js"],
+          "run_at": "document_end"
+        }
+
+        
+      ],
+      "permissions": [
+        "activeTab",
+        "storage"
+      ],
+      "incognito": "spanning"
+  }
+  

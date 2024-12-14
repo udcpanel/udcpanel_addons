@@ -1,0 +1,14 @@
+/* popup.css */
+.popup-container {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.function-toggle {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Add other styles as needed */
