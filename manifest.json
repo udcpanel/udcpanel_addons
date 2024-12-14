@@ -103,14 +103,20 @@
           "matches": ["https://prottoyon-karnafuli.org//web/forms/tread_license.php*"],
           "js": ["scripts/Trade_Licence_Fee_Counter.js"],
           "run_at": "document_end"
+        },
+        {
+          "matches": ["https://everify.bdris.gov.bd/*"],
+          "js": ["right_button_enabled_everify.js"]
         }
 
         
       ],
       "permissions": [
+        "contextMenus",
+        "tabs",
         "activeTab",
         "storage"
       ],
-      "incognito": "spanning"
+      "incognito": "spanning",
   }
   
