@@ -108,6 +108,46 @@
           "matches": ["https://everify.bdris.gov.bd/*"],
           "js": ["scripts/right_button_enabled_everify.js"],
           "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/citizen_certificate.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/attestation_other.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/permanenet_recident_certificate.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/inheritance_certificate.php*"],
+          "js": ["scripts/certificate_verifier_02.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/family_certififcate.php*"],
+          "js": ["scripts/certificate_verifier_02.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/landless_certificate.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/trade_certificate.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
+        },
+        {
+          "matches": ["https://prottoyon-karnafuli.org/admin/certificate/death_certificate.php*"],
+          "js": ["scripts/certificate_verifier.js"],
+          "run_at": "document_end"
         }
       ],
       "permissions": [
