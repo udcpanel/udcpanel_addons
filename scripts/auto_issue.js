@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // Get today's date
   let today = new Date();
 
-  // Create a date for January 1st, 2025
-  let expiryDate = new Date("2025-01-01");
+  // Create a date for January 1st, 2026
+  let expiryDate = new Date("2026-01-01");
 
   // Compare today's date with the expiry date
   if (today > expiryDate) {
